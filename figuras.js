@@ -45,17 +45,69 @@ console.groupEnd();
 
 
 function calcularPerimetroCuadrado() {
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const value = Number.parseFloat(document.getElementById("InputCuadradoPerimetro").value);
+    if (isNaN(value) || value < 0){
+        alert("Ingrese un valor válido");
+    } else {
+        alert("El perímetro del cuadrado es de: " + perimetroCuadrado(value) + "cm.");
+    }
+    document.getElementById("InputCuadradoPerimetro").value = "";   
 }
 
 function calcularAreaCuadrado() {
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
+    const value = Number.parseFloat(document.getElementById("InputCuadradoArea").value);
+    if (isNaN(value) || value < 0){
+        alert("Ingrese un valor válido");
+    } else {
+        alert("El área del cuadrado es de: " + areaCuadrado(value) + "cm2.");
+    }
+    document.getElementById("InputCuadradoArea").value = "";
+}
 
-    const area = areaCuadrado(value);
-    alert(area);
+
+function calcularPerimetroCirculo() {
+    const value = Number.parseFloat(document.getElementById("InputCirculoPerimetro").value);
+    if (isNaN(value) || value < 0){
+        alert("Ingrese un valor válido");
+    } else {
+        alert("El perímetro del círculo es de: " + perimetroCirculo(value) + "cm.");
+    }
+    document.getElementById("InputCirculoPerimetro").value = "";
+}
+
+function calcularAreaCirculo() {
+    const value = Number.parseFloat(document.getElementById("InputCirculoArea").value);
+    if (isNaN(value) || value < 0){
+        alert("Ingrese un valor válido");
+    } else {
+        alert("El área del círculo es de: " + areaCirculo(value) + "cm2.");
+    }
+    document.getElementById("InputCirculoArea").value = "";
+}
+
+
+function calcularPerimetroTriangulo() {
+    const valueLado1 = Number.parseFloat(document.getElementById("InputTrianguloLado1").value);
+    const valueLado2 = Number.parseFloat(document.getElementById("InputTrianguloLado2").value);
+    const valueBase = Number.parseFloat(document.getElementById("InputTrianguloBaseP").value);
+    if (isNaN(valueLado1) || isNaN(valueLado2) || isNaN(valueBase) || valueBase < 0 || valueLado1 < 0 || valueLado2 < 0){
+        alert("Ingrese valores válidos");
+    } else {
+        alert("El perímetro del triángulo es de: " + perimetroTriangulo(valueLado1, valueLado2, valueBase) + "cm.");
+    }
+    document.getElementById("InputTrianguloLado1").value = "";
+    document.getElementById("InputTrianguloLado2").value = "";
+    document.getElementById("InputTrianguloBaseP").value = ""; 
+}
+
+function calcularAreaTriangulo() {
+    const valueBase = Number.parseFloat(document.getElementById("InputTrianguloBaseA").value);
+    const valueAltura = Number.parseFloat(document.getElementById("InputTrianguloAltura").value);
+    if (isNaN(valueBase) || isNaN(valueAltura) || valueBase < 0 || valueAltura < 0){
+        alert("Ingrese valores válidos");
+    } else {
+        alert("El área del triángulo es de: " + areaTriangulo(valueBase, valueAltura) + "cm2.");
+    }
+    document.getElementById("InputTrianguloBaseA").value = "";
+    document.getElementById("InputTrianguloAltura").value = "";
 }

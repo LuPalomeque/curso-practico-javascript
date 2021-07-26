@@ -1,0 +1,71 @@
+#titulo_web {
+    text-align: center;
+    font-weight: normal;
+    background-color: white;
+}
+
+body {
+    background-color:  aquamarine;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#seccion_cuadrado {
+    text-align: center;
+    background-color: beige;
+    height: 200px;
+}
+
+#perimetro_cuadrado {
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
+
+#area_cuadrado {
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
+
+#seccion_circulo {
+    text-align: center;
+    background-color: beige;
+    height: 200px;
+}
+
+#perimetro_circulo {
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
+
+#area_circulo {
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
+
+
+#seccion_triangulo {
+    text-align: center;
+    background-color: beige;
+    height: 300px;
+}
+
+#perimetro_triangulo {
+    height: 70%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
+
+#area_triangulo {
+    height: 70%;
+    width: 40%;
+    background-color: white;
+    display: inline-block;
+}
